@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "CCNodeController.h"
 #import "CC3World.h"
+#import "ControladorVentanaPrincipal.h"
 
 @interface projectionExampleAppDelegate : NSObject <UIApplicationDelegate> {
 	UIWindow* window;
-	CCNodeController* viewController;
+    ControladorVentanaPrincipal* controladorVentanaPrincipal;
+	//CCNodeController* viewController;
 }
 
 @property (nonatomic, retain) UIWindow* window;

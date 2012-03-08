@@ -10,35 +10,110 @@
 #import "projectionExampleWorld.h"
 
 
+@interface CC3Layer (TemplateMethods)
+-(BOOL) handleTouch: (UITouch*) touch ofType: (uint) touchType;
+@end
+
 @implementation projectionExampleLayer
+
+@synthesize world3D;
+
+-(projectionExampleWorld*) world3D {
+	return (projectionExampleWorld*) self.cc3World;
+}
+
 - (void)dealloc {
     [super dealloc];
 }
 
+-(void) initializeControls 
+{
+    self.isTouchEnabled = YES;
+    [self setupPanGestureRecognition];
+    [self setupPinchGestureRecognition];
+    //[self setupTapGestureRecognition];
+}
 
-/**
- * Template method that is invoked automatically during initialization, regardless
- * of the actual init* method that was invoked. Subclasses can override to set up their
- * 2D controls and other initial state without having to override all of the possible
- * superclass init methods.
- *
- * The default implementation does nothing. It is not necessary to invoke the
- * superclass implementation when overriding in a subclass.
- */
--(void) initializeControls {}
+/*-(void) setupTapGestureRecognition
+{
+    UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    
+    [tapGesture setNumberOfTapsRequired:1];
+    [tapGesture setNumberOfTouchesRequired:1];
 
- // The ccTouchMoved:withEvent: method is optional for the <CCTouchDelegateProtocol>.
- // The event dispatcher will not dispatch events for which there is no method
- // implementation. Since the touch-move events are both voluminous and seldom used,
- // the implementation of ccTouchMoved:withEvent: has been left out of the default
- // CC3Layer implementation. To receive and handle touch-move events for object
- // picking,uncomment the following method implementation. To receive touch events,
- // you must also set the isTouchEnabled property of this instance to YES.
-/*
- // Handles intermediate finger-moved touch events. 
+    [[[CCDirector sharedDirector] openGLView] addGestureRecognizer:tapGesture];
+	[tapGesture release];
+    
+}
+-(IBAction)handleTapGesture:(UITapGestureRecognizer*)sender
+{
+     CCDirector *director = [CCDirector sharedDirector]; 
+     CGPoint touch =  [(UIPanGestureRecognizer*)sender locationOfTouch:0 inView:[director openGLView]];
+    [[self world3D] touchWorldAt:touch];
+}*/
+
+
+-(void) setupPanGestureRecognition
+{
+    UIPanGestureRecognizer* panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    
+    [panGesture setMinimumNumberOfTouches:1];
+	[panGesture setMaximumNumberOfTouches:1];
+    
+	[[[CCDirector sharedDirector] openGLView] addGestureRecognizer:panGesture];
+	[panGesture release];
+    
+    
+}
+-(IBAction)handlePanGesture:(UIPanGestureRecognizer*)sender
+{
+ 
+    CCDirector *director = [CCDirector sharedDirector]; 
+    
+    if([(UIPanGestureRecognizer*)sender state] == UIGestureRecognizerStateChanged) {
+        
+        CGPoint tp = [(UIPanGestureRecognizer*)sender locationOfTouch:0 inView:[director openGLView]];
+        CGFloat delX =  tp.x - startX;
+        CGFloat delY = - tp.y + startY;
+        startX = tp.x; startY = tp.y;
+        
+        delY = delY* - 0.5;
+        delX = delX*0.5;
+        
+        [[self world3D] spinThatThing:delX :delY];
+    }
+    
+    if([(UIPanGestureRecognizer*)sender state] == UIGestureRecognizerStateBegan) {
+        CGPoint tp =  [(UIPanGestureRecognizer*)sender locationOfTouch:0 inView:[director openGLView]];
+        startX = tp.x;
+        startY = tp.y;
+    }
+}
+
+-(void) setupPinchGestureRecognition
+{
+    
+    UIPinchGestureRecognizer* pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
+    
+	[[[CCDirector sharedDirector] openGLView] addGestureRecognizer:pinchGesture];
+	[pinchGesture release];
+}
+
+
+-(IBAction)handlePinchGesture:(UIPinchGestureRecognizer*)sender
+{
+    CGFloat currentScale = [(UIPinchGestureRecognizer*)sender scale];
+    CGFloat display = (1-currentScale);
+    [[self world3D ] zoomThatThing:display];
+
+}
+
 -(void) ccTouchMoved: (UITouch *)touch withEvent: (UIEvent *)event {
 	[self handleTouch: touch ofType: kCCTouchMoved];
 }
-*/
+
+
+
+
 
 @end

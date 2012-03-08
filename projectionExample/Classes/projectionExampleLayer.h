@@ -8,9 +8,27 @@
 
 
 #import "CC3Layer.h"
-
+#import "projectionExampleWorld.h"
 
 /** A sample application-specific CC3Layer subclass. */
-@interface projectionExampleLayer : CC3Layer {}
+@interface projectionExampleLayer : CC3Layer 
+{
+    CGFloat startX, endX, startY, endY;
+    
+}
+
+#pragma mark Gestures
+-(void) setupPanGestureRecognition;
+-(IBAction)handlePanGesture:(UIPanGestureRecognizer*)sender;
+
+-(void) setupPinchGestureRecognition;
+-(IBAction)handlePinchGesture:(UITapGestureRecognizer*)sender;
+
+/*-(void) setupTapGestureRecognition;
+-(IBAction)handleTapGesture:(UITapGestureRecognizer*)sender;*/
+
+
+@property(nonatomic, readonly) projectionExampleWorld* world3D;
+
 
 @end
