@@ -103,8 +103,8 @@
     //[teapotSatellite setLocation:cc3v(0.0, 0.0, 0.0)];
     //[self addChild:teapotSatellite];
     
-    podRezNode = [CC3PODResourceNode nodeWithName: @"MAPA"];
-	podRezNode.resource = [CC3PODResource resourceFromResourceFile: @"mapmexico37.pod"];
+    podRezNode = [CC3PODResourceNode nodeWithName: @"CHOC_Towe01"];
+	podRezNode.resource = [CC3PODResource resourceFromResourceFile: @"CHOC_Towe01_FloorPlanView_check.pod"];
     podRezNode.location = cc3v(0.0, 0.0, 0.0);
     [podRezNode addAxesDirectionMarkers];
     [podRezNode touchEnableAll];
@@ -128,7 +128,7 @@
             
 			break;
 		case kCCTouchEnded:
-            selectedNode = nil;
+            //selectedNode = nil;
 			break;
 		default:
 			break;
@@ -143,57 +143,31 @@
 
 -(void) nodeSelected: (CC3Node*) aNode byTouchEvent: (uint) touchType at: (CGPoint) touchPoint {
     
-    CC3Node * nodo = (CC3Node*)podRezNode;
+    //CC3Node * nodo = (CC3Node*)podRezNode;
 
-    LogInfo(@"You selected %@ at %@, or %@ in 2D.", nodo,
+    /*LogInfo(@"You selected %@ at %@, or %@ in 2D.", nodo,
 			NSStringFromCC3Vector( nodo.boundingBox.maximum  ),
-			NSStringFromCC3Vector(   nodo.boundingBox.minimum  ));
+			NSStringFromCC3Vector(   nodo.boundingBox.minimum  ));*/
     
-    
-    /*
-    	CC3Camera* cam = self.activeCamera;
-    	cam.shouldTrackTarget = YES;
-        cam.target = aNode;
-       [cam runAction: [CC3RotateToLookAt actionWithDuration: 2.0
-														 targetLocation: aNode.globalLocation]];
-    
-    
-        
-    
-    
-    LogInfo(@"camera %@ at %@, or %@ in 2D.", cam,
-			NSStringFromCC3Vector( cam.boundingBox.maximum  ),
-			NSStringFromCC3Vector(   cam.boundingBox.minimum  ));*/
-    
-    
-	selectedNode = aNode;
-	//aNode.shouldDrawDescriptor = !aNode.shouldDrawDescriptor;
-	aNode.shouldDrawDescriptor = false;
-    
-    //CCActionInterval* tintUp = [CC3TintEmissionTo actionWithDuration: 0.3f colorTo: kCCC4FCyan];
-    //CCActionInterval* tintDown = [CC3TintEmissionTo actionWithDuration: 0.9f colorTo: kCCC4FBlack];
-    //[aNode runAction: [CCSequence actionOne: tintUp two: tintDown]];
-    
-   /* CC3Vector currentVector = aNode.location;
-    CC3Vector endingVector = CC3VectorAdd(currentVector, cc3v(0.0,0.0, 5));
-    
-    
-    CCActionInterval* dropAction = [CC3MoveTo actionWithDuration: 3.0f moveTo: endingVector];
-	dropAction = [CCEaseOut actionWithAction: [CCEaseIn actionWithAction: dropAction rate: 4.0f] rate: 1.6f];
-    [aNode runAction:dropAction];*/
-    
-    [aNode setColor:ccRED];
-    aNode.isOpaque = !aNode.isOpaque;
-    if(!aNode.isOpaque){
-        aNode.opacity =200;
-        //[self.activeCamera moveWithDuration:2.0 toShowAllOf:podRezNode];
-    }else
+    if(aNode)
     {
-        //[self.activeCamera moveWithDuration:2.0 toShowAllOf:aNode];
+        selectedNode =(CC3PODMeshNode*)aNode ; 
+        CC3Material * materialNuevo = [[[selectedNode material] copy] autorelease];
+        [selectedNode setMaterial: materialNuevo];
+        
+        //[selectedNode mesh] 
+        //selectedNode = aNode;
+        //selectedNode.shouldDrawDescriptor = !selectedNode.shouldDrawDescriptor;
+        //aNode.shouldDrawDescriptor = false;
+        
+        
+        CCActionInterval* tintUp = [CC3TintEmissionTo actionWithDuration: 0.3f colorTo: kCCC4FCyan];
+        CCActionInterval* tintDown = [CC3TintEmissionTo actionWithDuration: 0.9f colorTo: kCCC4FBlack];
+        [selectedNode runAction: [CCSequence actionOne: tintUp two: tintDown]];
+          
+       [self setNodoSeleccionado:[selectedNode name]];
+       NSLog(@"%@, %d hijos %d", self.nodoSeleccionado, [selectedNode podIndex], [[selectedNode children]count]);
     }
-    [self setNodoSeleccionado:[aNode name]];
-   // NSLog(@"%@", aNode.opacity);
-    NSLog(@"%@", self.nodoSeleccionado);
 }
 
 

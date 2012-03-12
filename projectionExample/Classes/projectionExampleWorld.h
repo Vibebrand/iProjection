@@ -12,6 +12,7 @@
 #import "CC3MeshNode.h"
 
 #import "CC3PODResourceNode.h"
+#import "CC3PODMeshNode.h"
 #import "CC3PODLight.h"
 #import "CC3PointParticles.h"
 
@@ -19,7 +20,7 @@
 @interface projectionExampleWorld : CC3World 
 {
     CC3PODResourceNode *podRezNode;
-    CC3Node *selectedNode;
+    CC3PODMeshNode  *selectedNode;
 }
 
 -(void)zoomThatThing:(CGFloat)theZoom;

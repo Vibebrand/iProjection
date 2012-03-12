@@ -17,5 +17,5 @@
 }
 
 @property(nonatomic, assign) CCDirector* director;
-
+-(void)setupMenu;
 @end

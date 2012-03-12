@@ -41,7 +41,7 @@
 	[director setDeviceOrientation:kCCDeviceOrientationPortrait];
 
 	[director setAnimationInterval:1.0/60];
-	[director setDisplayFPS:NO];
+	[director setDisplayFPS:YES];
 	
      controladorVentanaPrincipal = [[ControladorVentanaPrincipal alloc] initWithNibName:@"ControladorVentanaPrincipal" bundle:[NSBundle mainBundle]];
 	

@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8370820014E2239000A4B912 /* mapmexico2.pod in Resources */ = {isa = PBXBuildFile; fileRef = 837081FF14E2239000A4B912 /* mapmexico2.pod */; };
-		8370820314E226FD00A4B912 /* mapmexico5.pod in Resources */ = {isa = PBXBuildFile; fileRef = 8370820214E226FD00A4B912 /* mapmexico5.pod */; };
-		8370820514E227AE00A4B912 /* mapmexico6.pod in Resources */ = {isa = PBXBuildFile; fileRef = 8370820414E227AE00A4B912 /* mapmexico6.pod */; };
-		8370820714E2282B00A4B912 /* mapmexico7.pod in Resources */ = {isa = PBXBuildFile; fileRef = 8370820614E2282B00A4B912 /* mapmexico7.pod */; };
-		8370820914E228BB00A4B912 /* mapmexico9.pod in Resources */ = {isa = PBXBuildFile; fileRef = 8370820814E228BB00A4B912 /* mapmexico9.pod */; };
-		8370820B14E2330C00A4B912 /* mapmexico17.pod in Resources */ = {isa = PBXBuildFile; fileRef = 8370820A14E2330C00A4B912 /* mapmexico17.pod */; };
-		83BBF37E14F1C12300FA6516 /* mapmexico30.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83BBF37D14F1C12300FA6516 /* mapmexico30.pod */; };
-		83BBF38114F1D19A00FA6516 /* mapmexico34.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83BBF38014F1D19A00FA6516 /* mapmexico34.pod */; };
-		83BBF38314F1D5C200FA6516 /* mapmexico35.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83BBF38214F1D5C200FA6516 /* mapmexico35.pod */; };
-		83BBF38514F1D62F00FA6516 /* mapmexico36.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83BBF38414F1D62F00FA6516 /* mapmexico36.pod */; };
-		83BBF38714F1D6C100FA6516 /* mapmexico37.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83BBF38614F1D6C100FA6516 /* mapmexico37.pod */; };
+		83CDE8ED150C150C00BBDDB7 /* CHOC_Towe01_.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8EA150C150C00BBDDB7 /* CHOC_Towe01_.pod */; };
+		83CDE8EE150C150C00BBDDB7 /* CHOC_Towe01_FloorPlanView.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8EB150C150C00BBDDB7 /* CHOC_Towe01_FloorPlanView.pod */; };
+		83CDE8EF150C150C00BBDDB7 /* CHOC_Towe01_FloorView.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8EC150C150C00BBDDB7 /* CHOC_Towe01_FloorView.pod */; };
+		83CDE8F2150C16E100BBDDB7 /* CHOC_Towe01_FloorPlanView_check.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8F1150C16E100BBDDB7 /* CHOC_Towe01_FloorPlanView_check.pod */; };
+		83CDE8F4150C196B00BBDDB7 /* CHOC_Towe01_FloorView_check.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8F3150C196A00BBDDB7 /* CHOC_Towe01_FloorView_check.pod */; };
 		D738416C15094C12001D95C2 /* ControladorVentanaPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = D738416A15094C12001D95C2 /* ControladorVentanaPrincipal.m */; };
 		D738416D15094C12001D95C2 /* ControladorVentanaPrincipal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D738416B15094C12001D95C2 /* ControladorVentanaPrincipal.xib */; };
+		D738416F15096496001D95C2 /* CHOC_Towe01.pod in Resources */ = {isa = PBXBuildFile; fileRef = D738416E15096496001D95C2 /* CHOC_Towe01.pod */; };
+		D79F3154150E5092004F41C3 /* QuadCurveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3151150E5092004F41C3 /* QuadCurveMenu.m */; };
+		D79F3155150E5092004F41C3 /* QuadCurveMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3153150E5092004F41C3 /* QuadCurveMenuItem.m */; };
+		D79F3165150E50B2004F41C3 /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3157150E50B2004F41C3 /* bg-addbutton-highlighted.png */; };
+		D79F3166150E50B2004F41C3 /* bg-addbutton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3158150E50B2004F41C3 /* bg-addbutton-highlighted@2x.png */; };
+		D79F3167150E50B2004F41C3 /* bg-addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3159150E50B2004F41C3 /* bg-addbutton.png */; };
+		D79F3168150E50B2004F41C3 /* bg-addbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F315A150E50B2004F41C3 /* bg-addbutton@2x.png */; };
+		D79F3169150E50B2004F41C3 /* bg-menuitem-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F315B150E50B2004F41C3 /* bg-menuitem-highlighted.png */; };
+		D79F316A150E50B2004F41C3 /* bg-menuitem-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F315C150E50B2004F41C3 /* bg-menuitem-highlighted@2x.png */; };
+		D79F316B150E50B2004F41C3 /* bg-menuitem.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F315D150E50B2004F41C3 /* bg-menuitem.png */; };
+		D79F316C150E50B2004F41C3 /* bg-menuitem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F315E150E50B2004F41C3 /* bg-menuitem@2x.png */; };
+		D79F316D150E50B2004F41C3 /* icon-plus-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F315F150E50B2004F41C3 /* icon-plus-highlighted.png */; };
+		D79F316E150E50B2004F41C3 /* icon-plus-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3160150E50B2004F41C3 /* icon-plus-highlighted@2x.png */; };
+		D79F316F150E50B2004F41C3 /* icon-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3161150E50B2004F41C3 /* icon-plus.png */; };
+		D79F3170150E50B2004F41C3 /* icon-plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3162150E50B2004F41C3 /* icon-plus@2x.png */; };
+		D79F3171150E50B2004F41C3 /* icon-star.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3163150E50B2004F41C3 /* icon-star.png */; };
+		D79F3172150E50B2004F41C3 /* icon-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3164150E50B2004F41C3 /* icon-star@2x.png */; };
+		D79F3176150EA35D004F41C3 /* Modelo3D.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3175150EA35D004F41C3 /* Modelo3D.m */; };
+		D7C743FD150A9DC700E65E06 /* CHOC_Towe01_Test01.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7C743FC150A9DC700E65E06 /* CHOC_Towe01_Test01.pod */; };
 		D7CB428B14E1C258002568A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CB428A14E1C258002568A3 /* QuartzCore.framework */; };
 		D7CB428D14E1C258002568A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CB428C14E1C258002568A3 /* OpenGLES.framework */; };
 		D7CB428F14E1C258002568A3 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CB428E14E1C258002568A3 /* OpenAL.framework */; };
@@ -210,32 +223,42 @@
 		D7CB44E414E1C25D002568A3 /* projectionExampleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CB44E314E1C25D002568A3 /* projectionExampleLayer.m */; };
 		D7CB44E714E1C25D002568A3 /* projectionExampleWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CB44E614E1C25D002568A3 /* projectionExampleWorld.m */; };
 		D7CB44E914E1C25D002568A3 /* hello-world.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44E814E1C25D002568A3 /* hello-world.pod */; };
-		D7CB44F614E1C65D002568A3 /* cocos3dMascot.png in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44F014E1C65D002568A3 /* cocos3dMascot.png */; };
-		D7CB44F714E1C65D002568A3 /* cocos3dMascot.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44F114E1C65D002568A3 /* cocos3dMascot.pod */; };
-		D7CB44F814E1C65D002568A3 /* DieCube.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44F214E1C65D002568A3 /* DieCube.pod */; };
 		D7CB44F914E1C65D002568A3 /* mallet.png in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44F314E1C65D002568A3 /* mallet.png */; };
 		D7CB44FA14E1C65D002568A3 /* mallet.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44F414E1C65D002568A3 /* mallet.pod */; };
 		D7CB44FB14E1C65D002568A3 /* MAPA.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44F514E1C65D002568A3 /* MAPA.pod */; };
-		D7FC4D5714E2D204000D4ED3 /* untitled3.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7FC4D5614E2D204000D4ED3 /* untitled3.pod */; };
-		D7FC4D5E14E325E2000D4ED3 /* libelula.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7FC4D5D14E325E2000D4ED3 /* libelula.pod */; };
-		D7FC4D6014E32A62000D4ED3 /* libelula2.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7FC4D5F14E32A62000D4ED3 /* libelula2.pod */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		837081FF14E2239000A4B912 /* mapmexico2.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico2.pod; path = Resources/mapmexico2.pod; sourceTree = SOURCE_ROOT; };
-		8370820214E226FD00A4B912 /* mapmexico5.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico5.pod; path = Resources/mapmexico5.pod; sourceTree = SOURCE_ROOT; };
-		8370820414E227AE00A4B912 /* mapmexico6.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico6.pod; path = Resources/mapmexico6.pod; sourceTree = SOURCE_ROOT; };
-		8370820614E2282B00A4B912 /* mapmexico7.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico7.pod; path = Resources/mapmexico7.pod; sourceTree = SOURCE_ROOT; };
-		8370820814E228BB00A4B912 /* mapmexico9.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico9.pod; path = Resources/mapmexico9.pod; sourceTree = SOURCE_ROOT; };
-		8370820A14E2330C00A4B912 /* mapmexico17.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico17.pod; path = Resources/mapmexico17.pod; sourceTree = SOURCE_ROOT; };
-		83BBF37D14F1C12300FA6516 /* mapmexico30.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico30.pod; path = Resources/mapmexico30.pod; sourceTree = SOURCE_ROOT; };
-		83BBF38014F1D19A00FA6516 /* mapmexico34.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico34.pod; path = Resources/mapmexico34.pod; sourceTree = SOURCE_ROOT; };
-		83BBF38214F1D5C200FA6516 /* mapmexico35.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico35.pod; path = Resources/mapmexico35.pod; sourceTree = SOURCE_ROOT; };
-		83BBF38414F1D62F00FA6516 /* mapmexico36.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico36.pod; path = Resources/mapmexico36.pod; sourceTree = SOURCE_ROOT; };
-		83BBF38614F1D6C100FA6516 /* mapmexico37.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mapmexico37.pod; path = Resources/mapmexico37.pod; sourceTree = SOURCE_ROOT; };
+		83CDE8EA150C150C00BBDDB7 /* CHOC_Towe01_.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_.pod; path = Resources/CHOC_Towe01_.pod; sourceTree = SOURCE_ROOT; };
+		83CDE8EB150C150C00BBDDB7 /* CHOC_Towe01_FloorPlanView.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_FloorPlanView.pod; path = Resources/CHOC_Towe01_FloorPlanView.pod; sourceTree = SOURCE_ROOT; };
+		83CDE8EC150C150C00BBDDB7 /* CHOC_Towe01_FloorView.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_FloorView.pod; path = Resources/CHOC_Towe01_FloorView.pod; sourceTree = SOURCE_ROOT; };
+		83CDE8F1150C16E100BBDDB7 /* CHOC_Towe01_FloorPlanView_check.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_FloorPlanView_check.pod; path = Resources/CHOC_Towe01_FloorPlanView_check.pod; sourceTree = SOURCE_ROOT; };
+		83CDE8F3150C196A00BBDDB7 /* CHOC_Towe01_FloorView_check.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_FloorView_check.pod; path = Resources/CHOC_Towe01_FloorView_check.pod; sourceTree = SOURCE_ROOT; };
 		D738416915094C12001D95C2 /* ControladorVentanaPrincipal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControladorVentanaPrincipal.h; path = Classes/ControladorVentanaPrincipal.h; sourceTree = "<group>"; };
 		D738416A15094C12001D95C2 /* ControladorVentanaPrincipal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControladorVentanaPrincipal.m; path = Classes/ControladorVentanaPrincipal.m; sourceTree = "<group>"; };
 		D738416B15094C12001D95C2 /* ControladorVentanaPrincipal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ControladorVentanaPrincipal.xib; path = Classes/ControladorVentanaPrincipal.xib; sourceTree = "<group>"; };
+		D738416E15096496001D95C2 /* CHOC_Towe01.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01.pod; path = Resources/CHOC_Towe01.pod; sourceTree = SOURCE_ROOT; };
+		D79F3150150E5092004F41C3 /* QuadCurveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenu.h; path = Classes/QuadCurveMenu.h; sourceTree = "<group>"; };
+		D79F3151150E5092004F41C3 /* QuadCurveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuadCurveMenu.m; path = Classes/QuadCurveMenu.m; sourceTree = "<group>"; };
+		D79F3152150E5092004F41C3 /* QuadCurveMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenuItem.h; path = Classes/QuadCurveMenuItem.h; sourceTree = "<group>"; };
+		D79F3153150E5092004F41C3 /* QuadCurveMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuadCurveMenuItem.m; path = Classes/QuadCurveMenuItem.m; sourceTree = "<group>"; };
+		D79F3157150E50B2004F41C3 /* bg-addbutton-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted.png"; sourceTree = "<group>"; };
+		D79F3158150E50B2004F41C3 /* bg-addbutton-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton-highlighted@2x.png"; sourceTree = "<group>"; };
+		D79F3159150E50B2004F41C3 /* bg-addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton.png"; sourceTree = "<group>"; };
+		D79F315A150E50B2004F41C3 /* bg-addbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-addbutton@2x.png"; sourceTree = "<group>"; };
+		D79F315B150E50B2004F41C3 /* bg-menuitem-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted.png"; sourceTree = "<group>"; };
+		D79F315C150E50B2004F41C3 /* bg-menuitem-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted@2x.png"; sourceTree = "<group>"; };
+		D79F315D150E50B2004F41C3 /* bg-menuitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem.png"; sourceTree = "<group>"; };
+		D79F315E150E50B2004F41C3 /* bg-menuitem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem@2x.png"; sourceTree = "<group>"; };
+		D79F315F150E50B2004F41C3 /* icon-plus-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted.png"; sourceTree = "<group>"; };
+		D79F3160150E50B2004F41C3 /* icon-plus-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus-highlighted@2x.png"; sourceTree = "<group>"; };
+		D79F3161150E50B2004F41C3 /* icon-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus.png"; sourceTree = "<group>"; };
+		D79F3162150E50B2004F41C3 /* icon-plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-plus@2x.png"; sourceTree = "<group>"; };
+		D79F3163150E50B2004F41C3 /* icon-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star.png"; sourceTree = "<group>"; };
+		D79F3164150E50B2004F41C3 /* icon-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star@2x.png"; sourceTree = "<group>"; };
+		D79F3174150EA35D004F41C3 /* Modelo3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Modelo3D.h; path = Classes/Modelo3D.h; sourceTree = "<group>"; };
+		D79F3175150EA35D004F41C3 /* Modelo3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Modelo3D.m; path = Classes/Modelo3D.m; sourceTree = "<group>"; };
+		D7C743FC150A9DC700E65E06 /* CHOC_Towe01_Test01.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_Test01.pod; path = Resources/CHOC_Towe01_Test01.pod; sourceTree = SOURCE_ROOT; };
 		D7CB428614E1C257002568A3 /* projectionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CB428A14E1C258002568A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D7CB428C14E1C258002568A3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -630,15 +653,9 @@
 		D7CB44E514E1C25D002568A3 /* projectionExampleWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = projectionExampleWorld.h; path = Classes/projectionExampleWorld.h; sourceTree = "<group>"; };
 		D7CB44E614E1C25D002568A3 /* projectionExampleWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = projectionExampleWorld.m; path = Classes/projectionExampleWorld.m; sourceTree = "<group>"; };
 		D7CB44E814E1C25D002568A3 /* hello-world.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = "hello-world.pod"; path = "Resources/hello-world.pod"; sourceTree = "<group>"; };
-		D7CB44F014E1C65D002568A3 /* cocos3dMascot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cocos3dMascot.png; path = Resources/cocos3dMascot.png; sourceTree = SOURCE_ROOT; };
-		D7CB44F114E1C65D002568A3 /* cocos3dMascot.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = cocos3dMascot.pod; path = Resources/cocos3dMascot.pod; sourceTree = SOURCE_ROOT; };
-		D7CB44F214E1C65D002568A3 /* DieCube.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = DieCube.pod; path = Resources/DieCube.pod; sourceTree = SOURCE_ROOT; };
 		D7CB44F314E1C65D002568A3 /* mallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mallet.png; path = Resources/mallet.png; sourceTree = SOURCE_ROOT; };
 		D7CB44F414E1C65D002568A3 /* mallet.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = mallet.pod; path = Resources/mallet.pod; sourceTree = SOURCE_ROOT; };
 		D7CB44F514E1C65D002568A3 /* MAPA.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = MAPA.pod; path = Resources/MAPA.pod; sourceTree = SOURCE_ROOT; };
-		D7FC4D5614E2D204000D4ED3 /* untitled3.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = untitled3.pod; path = Resources/untitled3.pod; sourceTree = SOURCE_ROOT; };
-		D7FC4D5D14E325E2000D4ED3 /* libelula.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = libelula.pod; path = Resources/libelula.pod; sourceTree = SOURCE_ROOT; };
-		D7FC4D5F14E32A62000D4ED3 /* libelula2.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = libelula2.pod; path = Resources/libelula2.pod; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -671,6 +688,7 @@
 		D738416115094AFD001D95C2 /* ControladorVista */ = {
 			isa = PBXGroup;
 			children = (
+				D79F314E150E5048004F41C3 /* Artefactos */,
 				D7CB44E214E1C25D002568A3 /* projectionExampleLayer.h */,
 				D7CB44E314E1C25D002568A3 /* projectionExampleLayer.m */,
 				D7CB44E514E1C25D002568A3 /* projectionExampleWorld.h */,
@@ -693,6 +711,48 @@
 			children = (
 			);
 			name = Servicio;
+			sourceTree = "<group>";
+		};
+		D79F314E150E5048004F41C3 /* Artefactos */ = {
+			isa = PBXGroup;
+			children = (
+				D79F3150150E5092004F41C3 /* QuadCurveMenu.h */,
+				D79F3151150E5092004F41C3 /* QuadCurveMenu.m */,
+				D79F3152150E5092004F41C3 /* QuadCurveMenuItem.h */,
+				D79F3153150E5092004F41C3 /* QuadCurveMenuItem.m */,
+			);
+			name = Artefactos;
+			sourceTree = "<group>";
+		};
+		D79F3156150E50B2004F41C3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D79F3157150E50B2004F41C3 /* bg-addbutton-highlighted.png */,
+				D79F3158150E50B2004F41C3 /* bg-addbutton-highlighted@2x.png */,
+				D79F3159150E50B2004F41C3 /* bg-addbutton.png */,
+				D79F315A150E50B2004F41C3 /* bg-addbutton@2x.png */,
+				D79F315B150E50B2004F41C3 /* bg-menuitem-highlighted.png */,
+				D79F315C150E50B2004F41C3 /* bg-menuitem-highlighted@2x.png */,
+				D79F315D150E50B2004F41C3 /* bg-menuitem.png */,
+				D79F315E150E50B2004F41C3 /* bg-menuitem@2x.png */,
+				D79F315F150E50B2004F41C3 /* icon-plus-highlighted.png */,
+				D79F3160150E50B2004F41C3 /* icon-plus-highlighted@2x.png */,
+				D79F3161150E50B2004F41C3 /* icon-plus.png */,
+				D79F3162150E50B2004F41C3 /* icon-plus@2x.png */,
+				D79F3163150E50B2004F41C3 /* icon-star.png */,
+				D79F3164150E50B2004F41C3 /* icon-star@2x.png */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		D79F3173150EA32A004F41C3 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				D79F3174150EA35D004F41C3 /* Modelo3D.h */,
+				D79F3175150EA35D004F41C3 /* Modelo3D.m */,
+			);
+			name = Modelo;
 			sourceTree = "<group>";
 		};
 		D7CB427B14E1C257002568A3 = {
@@ -1302,6 +1362,7 @@
 		D7CB44DE14E1C25D002568A3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D79F3173150EA32A004F41C3 /* Modelo */,
 				D738416315094B3B001D95C2 /* Servicio */,
 				D738416215094B0B001D95C2 /* ControladorNegocio */,
 				D738416115094AFD001D95C2 /* ControladorVista */,
@@ -1315,23 +1376,14 @@
 		D7CB44EF14E1C649002568A3 /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
-				83BBF38614F1D6C100FA6516 /* mapmexico37.pod */,
-				83BBF38414F1D62F00FA6516 /* mapmexico36.pod */,
-				83BBF38214F1D5C200FA6516 /* mapmexico35.pod */,
-				83BBF38014F1D19A00FA6516 /* mapmexico34.pod */,
-				83BBF37D14F1C12300FA6516 /* mapmexico30.pod */,
-				D7FC4D5F14E32A62000D4ED3 /* libelula2.pod */,
-				D7FC4D5D14E325E2000D4ED3 /* libelula.pod */,
-				D7FC4D5614E2D204000D4ED3 /* untitled3.pod */,
-				8370820A14E2330C00A4B912 /* mapmexico17.pod */,
-				8370820814E228BB00A4B912 /* mapmexico9.pod */,
-				8370820614E2282B00A4B912 /* mapmexico7.pod */,
-				8370820414E227AE00A4B912 /* mapmexico6.pod */,
-				8370820214E226FD00A4B912 /* mapmexico5.pod */,
-				837081FF14E2239000A4B912 /* mapmexico2.pod */,
-				D7CB44F014E1C65D002568A3 /* cocos3dMascot.png */,
-				D7CB44F114E1C65D002568A3 /* cocos3dMascot.pod */,
-				D7CB44F214E1C65D002568A3 /* DieCube.pod */,
+				D79F3156150E50B2004F41C3 /* Images */,
+				83CDE8F3150C196A00BBDDB7 /* CHOC_Towe01_FloorView_check.pod */,
+				83CDE8F1150C16E100BBDDB7 /* CHOC_Towe01_FloorPlanView_check.pod */,
+				83CDE8EA150C150C00BBDDB7 /* CHOC_Towe01_.pod */,
+				83CDE8EB150C150C00BBDDB7 /* CHOC_Towe01_FloorPlanView.pod */,
+				83CDE8EC150C150C00BBDDB7 /* CHOC_Towe01_FloorView.pod */,
+				D7C743FC150A9DC700E65E06 /* CHOC_Towe01_Test01.pod */,
+				D738416E15096496001D95C2 /* CHOC_Towe01.pod */,
 				D7CB44F314E1C65D002568A3 /* mallet.png */,
 				D7CB44F414E1C65D002568A3 /* mallet.pod */,
 				D7CB44F514E1C65D002568A3 /* MAPA.pod */,
@@ -1400,27 +1452,31 @@
 				D7CB439C14E1C25B002568A3 /* Icon@2x.png in Resources */,
 				D7CB439F14E1C25B002568A3 /* iTunesArtwork in Resources */,
 				D7CB44E914E1C25D002568A3 /* hello-world.pod in Resources */,
-				D7CB44F614E1C65D002568A3 /* cocos3dMascot.png in Resources */,
-				D7CB44F714E1C65D002568A3 /* cocos3dMascot.pod in Resources */,
-				D7CB44F814E1C65D002568A3 /* DieCube.pod in Resources */,
 				D7CB44F914E1C65D002568A3 /* mallet.png in Resources */,
 				D7CB44FA14E1C65D002568A3 /* mallet.pod in Resources */,
 				D7CB44FB14E1C65D002568A3 /* MAPA.pod in Resources */,
-				8370820014E2239000A4B912 /* mapmexico2.pod in Resources */,
-				8370820314E226FD00A4B912 /* mapmexico5.pod in Resources */,
-				8370820514E227AE00A4B912 /* mapmexico6.pod in Resources */,
-				8370820714E2282B00A4B912 /* mapmexico7.pod in Resources */,
-				8370820914E228BB00A4B912 /* mapmexico9.pod in Resources */,
-				8370820B14E2330C00A4B912 /* mapmexico17.pod in Resources */,
-				D7FC4D5714E2D204000D4ED3 /* untitled3.pod in Resources */,
-				D7FC4D5E14E325E2000D4ED3 /* libelula.pod in Resources */,
-				D7FC4D6014E32A62000D4ED3 /* libelula2.pod in Resources */,
-				83BBF37E14F1C12300FA6516 /* mapmexico30.pod in Resources */,
-				83BBF38114F1D19A00FA6516 /* mapmexico34.pod in Resources */,
-				83BBF38314F1D5C200FA6516 /* mapmexico35.pod in Resources */,
-				83BBF38514F1D62F00FA6516 /* mapmexico36.pod in Resources */,
-				83BBF38714F1D6C100FA6516 /* mapmexico37.pod in Resources */,
 				D738416D15094C12001D95C2 /* ControladorVentanaPrincipal.xib in Resources */,
+				D738416F15096496001D95C2 /* CHOC_Towe01.pod in Resources */,
+				D7C743FD150A9DC700E65E06 /* CHOC_Towe01_Test01.pod in Resources */,
+				83CDE8ED150C150C00BBDDB7 /* CHOC_Towe01_.pod in Resources */,
+				83CDE8EE150C150C00BBDDB7 /* CHOC_Towe01_FloorPlanView.pod in Resources */,
+				83CDE8EF150C150C00BBDDB7 /* CHOC_Towe01_FloorView.pod in Resources */,
+				83CDE8F2150C16E100BBDDB7 /* CHOC_Towe01_FloorPlanView_check.pod in Resources */,
+				83CDE8F4150C196B00BBDDB7 /* CHOC_Towe01_FloorView_check.pod in Resources */,
+				D79F3165150E50B2004F41C3 /* bg-addbutton-highlighted.png in Resources */,
+				D79F3166150E50B2004F41C3 /* bg-addbutton-highlighted@2x.png in Resources */,
+				D79F3167150E50B2004F41C3 /* bg-addbutton.png in Resources */,
+				D79F3168150E50B2004F41C3 /* bg-addbutton@2x.png in Resources */,
+				D79F3169150E50B2004F41C3 /* bg-menuitem-highlighted.png in Resources */,
+				D79F316A150E50B2004F41C3 /* bg-menuitem-highlighted@2x.png in Resources */,
+				D79F316B150E50B2004F41C3 /* bg-menuitem.png in Resources */,
+				D79F316C150E50B2004F41C3 /* bg-menuitem@2x.png in Resources */,
+				D79F316D150E50B2004F41C3 /* icon-plus-highlighted.png in Resources */,
+				D79F316E150E50B2004F41C3 /* icon-plus-highlighted@2x.png in Resources */,
+				D79F316F150E50B2004F41C3 /* icon-plus.png in Resources */,
+				D79F3170150E50B2004F41C3 /* icon-plus@2x.png in Resources */,
+				D79F3171150E50B2004F41C3 /* icon-star.png in Resources */,
+				D79F3172150E50B2004F41C3 /* icon-star@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1604,6 +1660,9 @@
 				D7CB44E414E1C25D002568A3 /* projectionExampleLayer.m in Sources */,
 				D7CB44E714E1C25D002568A3 /* projectionExampleWorld.m in Sources */,
 				D738416C15094C12001D95C2 /* ControladorVentanaPrincipal.m in Sources */,
+				D79F3154150E5092004F41C3 /* QuadCurveMenu.m in Sources */,
+				D79F3155150E5092004F41C3 /* QuadCurveMenuItem.m in Sources */,
+				D79F3176150EA35D004F41C3 /* Modelo3D.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1678,6 +1737,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = projectionExample/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = projectionExample/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1693,6 +1753,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = projectionExample/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = projectionExample/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
