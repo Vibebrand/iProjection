@@ -19,6 +19,6 @@
 
 @property(nonatomic, retain)NSString* nombre;
 @property(nonatomic, retain)UIImage *icono;
-
+@property(nonatomic, retain)NSMutableDictionary *navegacionPorNodo;
 
 @end

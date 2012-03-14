@@ -7,7 +7,7 @@
 //
 
 #import "projectionExampleLayer.h"
-#import "projectionExampleWorld.h"
+#import "Mundo3D.h"
 
 
 @interface CC3Layer (TemplateMethods)
@@ -18,8 +18,8 @@
 
 @synthesize world3D;
 
--(projectionExampleWorld*) world3D {
-	return (projectionExampleWorld*) self.cc3World;
+-(Mundo3D*) world3D {
+	return (Mundo3D*) self.cc3World;
 }
 
 - (void)dealloc {

@@ -7,12 +7,30 @@
 #import "CC3OpenGLES11Engine.h"
 
 #import "projectionExampleLayer.h"
-#import "projectionExampleWorld.h"
+#import "Mundo3D.h"
 #import "QuadCurveMenu.h"
 #import "QuadCurveMenuItem.h"
 
 @implementation ControladorVentanaPrincipal
+
+@synthesize representacionModelos3ds;
+@synthesize tablaDatos;
 @synthesize director;
+
+@synthesize delegadoNavegacion;
+
+@synthesize celdaModelo3D;
+@synthesize cellNib = _cellNib;
+
+-(void)dealloc
+{
+    self.representacionModelos3ds = nil;
+    self.tablaDatos = nil;
+    self.celdaModelo3D= nil;
+    
+    [_cellNib release];
+    [super dealloc];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +51,8 @@
 {
     [super viewDidLoad];
     
+    
+    self.cellNib = [UINib nibWithNibName:@"CeldaModelo3D" bundle:nil];
     self.director = [CCDirector sharedDirector];
     
     _glView = [CC3EAGLView viewWithFrame: [[self view] bounds] 
@@ -59,7 +79,12 @@
 	
     [cc3Layer scheduleUpdate];
 	
-    cc3Layer.cc3World = [projectionExampleWorld  world];
+    cc3Layer.cc3World = [Mundo3D  world];
+    
+    //Inyeccion
+    Mundo3D *mundo3D = (Mundo3D*)cc3Layer.cc3World; 
+    [self setDelegadoNavegacion:mundo3D];
+    [mundo3D setDelegadoReresentacionNavegacion:self];
     
 	ControllableCCLayer* mainLayer = cc3Layer;
     
@@ -68,8 +93,6 @@
     [scene addChild: mainLayer];
     
     [[self director] runWithScene:scene];
-    
-    
 }
 
 -(void)setupMenu
@@ -125,6 +148,64 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
+}
+
+
+#pragma mark -
+#pragma mark Table view datasource methods
+
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+	return 1;
+}
+
+-(NSInteger) tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section
+{
+    if(self.representacionModelos3ds)
+        return [self.representacionModelos3ds count];
+    return  0;
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString * identificador = @"Entidades3D";
+    CeldaModelo3D *celda;
+    celda = (CeldaModelo3D *)[tableView dequeueReusableCellWithIdentifier:identificador];
+    
+    if (celda == nil) {
+        [self.cellNib  instantiateWithOwner:self options:nil];
+        celda = [self celdaModelo3D];
+        self.celdaModelo3D = nil;
+    }
+    
+    if(self.representacionModelos3ds)
+    {
+        UIImage *representacionModelo3D = [self.representacionModelos3ds  objectAtIndex: [indexPath row] ];
+        [[celda imagen] setImage:representacionModelo3D];
+    }
+    return celda;
+}
+
+#pragma mark -
+#pragma mark Table view delegate methods
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+	return @"";
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [[self delegadoNavegacion] mostrarModelo3DenPosicion:indexPath.row];        
+}
+
+#pragma mark iDelegadoRepresentacionNavegacion
+
+-(void)actualizarBarraNevegacion:(NSArray*)representacionModelos3D
+{
+    [self setRepresentacionModelos3ds:representacionModelos3D];
+    [[self tablaDatos] reloadData];
 }
 
 @end

@@ -8,7 +8,7 @@
 
 
 #import "CC3Layer.h"
-#import "projectionExampleWorld.h"
+#import "Mundo3D.h"
 
 /** A sample application-specific CC3Layer subclass. */
 @interface projectionExampleLayer : CC3Layer 
@@ -28,7 +28,7 @@
 -(IBAction)handleTapGesture:(UITapGestureRecognizer*)sender;*/
 
 
-@property(nonatomic, readonly) projectionExampleWorld* world3D;
+@property(nonatomic, readonly) Mundo3D* world3D;
 
 
 @end

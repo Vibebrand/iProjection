@@ -10,7 +10,7 @@
 
 #import "projectionExampleAppDelegate.h"
 #import "projectionExampleLayer.h"
-#import "projectionExampleWorld.h"
+#import "Mundo3D.h"
 #import "CC3EAGLView.h"
 
 @implementation projectionExampleAppDelegate
@@ -41,7 +41,7 @@
 	[director setDeviceOrientation:kCCDeviceOrientationPortrait];
 
 	[director setAnimationInterval:1.0/60];
-	[director setDisplayFPS:YES];
+	[director setDisplayFPS:NO];
 	
      controladorVentanaPrincipal = [[ControladorVentanaPrincipal alloc] initWithNibName:@"ControladorVentanaPrincipal" bundle:[NSBundle mainBundle]];
 	

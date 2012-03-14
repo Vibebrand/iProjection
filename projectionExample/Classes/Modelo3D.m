@@ -12,21 +12,23 @@
 
 @synthesize nombre;
 @synthesize icono;
-
+@synthesize navegacionPorNodo;
 
 -(void)dealloc
 {
     self.nombre = nil;
     self.icono = nil;
+    self.navegacionPorNodo = nil;
+    
     [_archivoPOD release];
     [super dealloc];
 }
 
 -(CC3PODResourceNode*)obtenerArchivoPOD
 {
-    if(_archivoPOD && self.nombre.length>0)
+    if(!_archivoPOD && [self.nombre length])
     {   
-        _archivoPOD = [CC3PODResourceNode nodeWithName: self.nombre];
+        _archivoPOD = [[CC3PODResourceNode nodeWithName: self.nombre] retain];
         _archivoPOD.resource = [CC3PODResource resourceFromResourceFile: 
                                 [NSString stringWithFormat:@"%@.pod",self.nombre]
                                 ];
