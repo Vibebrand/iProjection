@@ -25,7 +25,8 @@
     CC3PODMeshNode  *nodoSeleccionado;
 }
 
--(void)agregarModelo3D:(NSString*)nombreModelo3D;
+-(void)agregarModelo3D:(NSString*)nombreModelo3D recordandoEnNavegacion:(BOOL)seAlmacena;
+
 -(void)cargarModeloSeleccionado;
 -(void)zoomThatThing:(CGFloat)theZoom;
 

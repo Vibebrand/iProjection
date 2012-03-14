@@ -99,7 +99,7 @@
     ServicioGestorModelos3D* servicio = [ServicioGestorModelos3D new];
     [self setModelos3D: [servicio obtenerModelos3D]];
     
-    [self agregarModelo3D:@"CHOC_Towe01"];
+    [self agregarModelo3D:@"CHOC_Towe01" recordandoEnNavegacion:YES];
     [servicio release];
     
     
@@ -110,7 +110,7 @@
 	}
 
 //TODO agregar comportamiento de la lista asi como su refrescado de objetos
--(void)agregarModelo3D:(NSString*)nombreModelo3D;
+-(void)agregarModelo3D:(NSString*)nombreModelo3D recordandoEnNavegacion:(BOOL)seAlmacena
 {
     if(self.modelos3D)
     {
@@ -121,14 +121,19 @@
         
         if(_modelo3DActivo && rangoInicio>0)
         {
-            [[self modelos3DActivos] addObject: _modelo3DActivo.nombre   ];
-            [[self representacionModelos3D] addObject: _modelo3DActivo.icono]; 
-    
-            //TODO agregar navegacion de imagenes
-            if(numeroDeElementos>1){
-                NSRange rango = NSMakeRange ((rangoInicio-1), (numeroDeElementos-rangoInicio));
+            if(numeroDeElementos>1)
+            {
+                NSRange rango = NSMakeRange ((rangoInicio), (numeroDeElementos-rangoInicio));
                 [ self.modelos3DActivos removeObjectsInRange:rango];
                 [self.representacionModelos3D removeObjectsInRange:rango];
+            }
+            
+            if( seAlmacena && [self.modelos3DActivos indexOfObject:_modelo3DActivo.nombre] == NSNotFound)
+            {
+                
+                [[self modelos3DActivos] addObject: _modelo3DActivo.nombre   ];
+                [[self representacionModelos3D] addObject: _modelo3DActivo.icono]; 
+    
             }
             
         }else
@@ -194,7 +199,7 @@
 {
     NSString* modeloACargar =  [[_modelo3DActivo navegacionPorNodo] objectForKey:self.nombreNodoSeleccionado];
     if(modeloACargar && [modeloACargar length])
-        [self agregarModelo3D:modeloACargar];
+        [self agregarModelo3D:modeloACargar recordandoEnNavegacion:YES];
 }
 
 -(void)zoomThatThing:(CGFloat)theZoom
@@ -218,7 +223,7 @@
 
 -(void)mostrarModelo3DenPosicion:(int)posicion
 {
-    [ self agregarModelo3D:[[self modelos3DActivos] objectAtIndex:posicion]];
+    [ self agregarModelo3D:[[self modelos3DActivos] objectAtIndex:posicion] recordandoEnNavegacion:NO];
 }
 
 @end
