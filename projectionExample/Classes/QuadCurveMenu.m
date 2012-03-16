@@ -12,7 +12,7 @@
 static CGFloat const kQuadCurveMenuDefaultNearRadius = 110.0f;
 static CGFloat const kQuadCurveMenuDefaultEndRadius = 120.0f;
 static CGFloat const kQuadCurveMenuDefaultFarRadius = 140.0f;
-static CGFloat const kQuadCurveMenuDefaultStartPointX = 35.0;
+static CGFloat const kQuadCurveMenuDefaultStartPointX = 25.0;
 static CGFloat const kQuadCurveMenuDefaultStartPointY = 240.0;
 static CGFloat const kQuadCurveMenuDefaultTimeOffset = 0.036f;
 static CGFloat const kQuadCurveMenuDefaultRotateAngle = 0.0;
@@ -55,7 +55,7 @@ static CGPoint RotateCGPointAroundCenter(CGPoint point, CGPoint center, float an
 		self.timeOffset = kQuadCurveMenuDefaultTimeOffset;
 		self.rotateAngle = kQuadCurveMenuDefaultRotateAngle;
 		self.menuWholeAngle = kQuadCurveMenuDefaultMenuWholeAngle;
-		self.startPoint = CGPointMake(kQuadCurveMenuDefaultStartPointX, (frame.size.height -40));
+		self.startPoint = CGPointMake(kQuadCurveMenuDefaultStartPointX, (frame.size.height -25));
         
         // layout menus
         self.menusArray = aMenusArray;
@@ -66,7 +66,7 @@ static CGPoint RotateCGPointAroundCenter(CGPoint point, CGPoint center, float an
                                            ContentImage:[UIImage imageNamed:@"icon-plus.png"] 
                                 highlightedContentImage:[UIImage imageNamed:@"icon-plus-highlighted.png"]];
         _addButton.delegate = self;
-        _addButton.center = CGPointMake(kQuadCurveMenuDefaultStartPointX, (frame.size.height-40));
+        _addButton.center = CGPointMake(kQuadCurveMenuDefaultStartPointX, (frame.size.height-25));
         [self addSubview:_addButton];
     }
     return self;

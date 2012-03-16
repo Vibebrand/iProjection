@@ -24,8 +24,8 @@
 -(void) setupPinchGestureRecognition;
 -(IBAction)handlePinchGesture:(UITapGestureRecognizer*)sender;
 
-/*-(void) setupTapGestureRecognition;
--(IBAction)handleTapGesture:(UITapGestureRecognizer*)sender;*/
+-(void) setupTapGestureRecognition;
+-(IBAction)handleTapGesture:(UITapGestureRecognizer*)sender;
 
 
 @property(nonatomic, readonly) Mundo3D* world3D;

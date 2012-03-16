@@ -41,6 +41,7 @@
 @synthesize modelos3D;
 @synthesize modelos3DActivos;
 @synthesize representacionModelos3D;
+@synthesize nombreModeloActivo;
 
 -(void) dealloc {
     
@@ -49,6 +50,7 @@
     self.representacionModelos3D = nil;
     
     self.nombreNodoSeleccionado = nil;
+    self.nombreModeloActivo = nil;
     self.delegadoReresentacionNavegacion = nil;
     
     [_modelo3DActivo release];
@@ -60,11 +62,12 @@
 
 -(void) drawWorld
 {
-    static BOOL nombre = true;
-    if(nombre)
+    
+    if(refrescarCamara)
     {
-        [self.activeCamera moveWithDuration:2.0 toShowAllOf:[_modelo3DActivo obtenerArchivoPOD]];
-        nombre=false;
+        [self.activeCamera moveWithDuration:1.0 toShowAllOf:[_modelo3DActivo obtenerArchivoPOD] withPadding:0];
+    
+        refrescarCamara=NO;
     }
     
     [super drawWorld];
@@ -109,19 +112,17 @@
     LogDebug(@"The structure of this world is: %@", [self structureDescription]);
 	}
 
-//TODO agregar comportamiento de la lista asi como su refrescado de objetos
 -(void)agregarModelo3D:(NSString*)nombreModelo3D recordandoEnNavegacion:(BOOL)seAlmacena
 {
     if(self.modelos3D)
     {
+        [self setNombreModeloActivo:nombreModelo3D];
         int rangoInicio =[self.modelos3DActivos indexOfObject:nombreModelo3D];
         int numeroDeElementos = [self.modelos3DActivos count];
         
-        
-        
-        if(_modelo3DActivo && rangoInicio>0)
+        if(_modelo3DActivo)
         {
-            if(numeroDeElementos>1)
+            if(numeroDeElementos && rangoInicio != NSNotFound)
             {
                 NSRange rango = NSMakeRange ((rangoInicio), (numeroDeElementos-rangoInicio));
                 [ self.modelos3DActivos removeObjectsInRange:rango];
@@ -135,24 +136,43 @@
                 [[self representacionModelos3D] addObject: _modelo3DActivo.icono]; 
     
             }
+            CCActionInterval* fadeLayer = [CCFadeTo actionWithDuration: 0.5 opacity: 0];
+            CCActionInstant* removeHUD = [CCCallFunc actionWithTarget: self
+                                                             selector: @selector(eliminarNodo) ];
             
+            nodoAEliminar = [[_modelo3DActivo obtenerArchivoPOD] retain];
+           
+            [[self delegadoReresentacionNavegacion] actualizarBarraNevegacion:[self representacionModelos3D]];
+            
+            CCActionInstant* addHUD = [CCCallFunc actionWithTarget: self
+                                                             selector: @selector(renderizarNodo) ];
+             [nodoAEliminar runAction:[CCSequence actions:fadeLayer, removeHUD, addHUD, nil]];
         }else
         {
-            [self.modelos3DActivos removeAllObjects];
-            [self.representacionModelos3D removeAllObjects];
+            [self renderizarNodo];
         }
-        
-        if(_modelo3DActivo){
-            [self removeChild:[_modelo3DActivo obtenerArchivoPOD]];
-            [[self delegadoReresentacionNavegacion] actualizarBarraNevegacion:[self representacionModelos3D]];
-        }
-        _modelo3DActivo = [[self modelos3D] objectForKey:nombreModelo3D];
-       
-        self.ambientLight = kCC3DefaultLightColorAmbientWorld;
-        CC3Node* nodo = [_modelo3DActivo obtenerArchivoPOD];
-        [self addChild:nodo];
+            
     }
 }
+
+-(void)eliminarNodo
+{
+    [self removeChild:nodoAEliminar];
+}
+
+-(void) renderizarNodo
+{
+    _modelo3DActivo = [[self modelos3D] objectForKey:self.nombreModeloActivo];
+    CC3Node* nodo = [_modelo3DActivo obtenerArchivoPOD];
+    if(nodo)
+    {
+        [nodo setOpacity:255];
+        self.ambientLight = kCC3DefaultLightColorAmbientWorld;
+        [self addChild:nodo];
+        refrescarCamara = YES;    
+    }
+}
+
 
 -(void) updateBeforeTransform: (CC3NodeUpdatingVisitor*) visitor {}
 
@@ -173,10 +193,14 @@
 	}
 }
 
-/*-(void)touchWorldAt:(CGPoint) touchPoint
+-(void)touchWorldAt:(CGPoint) touchPoint
 {
-    [touchedNodePicker pickNodeFromTouchEvent: kCCTouchBegan at: touchPoint];
-}*/
+    
+    CC3Vector currentVector = self.activeCamera .location;
+    CC3Vector endingVector = CC3VectorAdd(currentVector, cc3v(0.0, 0.0, 30));
+    [self.activeCamera setLocation:endingVector];
+    refrescarCamara = YES;   
+}
 
 -(void) nodeSelected: (CC3Node*) aNode byTouchEvent: (uint) touchType at: (CGPoint) touchPoint {
     

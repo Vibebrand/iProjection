@@ -31,14 +31,14 @@
     self.isTouchEnabled = YES;
     [self setupPanGestureRecognition];
     [self setupPinchGestureRecognition];
-    //[self setupTapGestureRecognition];
+    [self setupTapGestureRecognition];
 }
 
-/*-(void) setupTapGestureRecognition
+-(void) setupTapGestureRecognition
 {
     UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
     
-    [tapGesture setNumberOfTapsRequired:1];
+    [tapGesture setNumberOfTapsRequired:2];
     [tapGesture setNumberOfTouchesRequired:1];
 
     [[[CCDirector sharedDirector] openGLView] addGestureRecognizer:tapGesture];
@@ -50,8 +50,7 @@
      CCDirector *director = [CCDirector sharedDirector]; 
      CGPoint touch =  [(UIPanGestureRecognizer*)sender locationOfTouch:0 inView:[director openGLView]];
     [[self world3D] touchWorldAt:touch];
-}*/
-
+}
 
 -(void) setupPanGestureRecognition
 {

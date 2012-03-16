@@ -18,8 +18,9 @@
     EAGLView *_glView;
 }
 
-@property(nonatomic, assign) IBOutlet NSArray *representacionModelos3ds;
+@property(nonatomic, assign) NSArray *representacionModelos3ds;
 @property(nonatomic, assign) IBOutlet UITableView *tablaDatos;
+@property(nonatomic, assign) IBOutlet UIView *panelRedondo;
 @property(nonatomic, assign) CCDirector* director;
 
 @property(nonatomic, assign)id<iDelegadoNavegacion> delegadoNavegacion;

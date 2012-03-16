@@ -10,12 +10,14 @@
 #import "Mundo3D.h"
 #import "QuadCurveMenu.h"
 #import "QuadCurveMenuItem.h"
+#import "PanelRedondo.h"
 
 @implementation ControladorVentanaPrincipal
 
 @synthesize representacionModelos3ds;
 @synthesize tablaDatos;
 @synthesize director;
+@synthesize panelRedondo;
 
 @synthesize delegadoNavegacion;
 
@@ -27,6 +29,7 @@
     self.representacionModelos3ds = nil;
     self.tablaDatos = nil;
     self.celdaModelo3D= nil;
+    self.panelRedondo = nil;
     
     [_cellNib release];
     [super dealloc];
@@ -51,6 +54,11 @@
 {
     [super viewDidLoad];
     
+     //[[self view ] setBackgroundColor:[UIColor colorWithPatternImage: [UIImage imageNamed:@"_fondo_rombos.png"] ]];
+    
+     UIView* _panelRedondo = [[PanelRedondo alloc] initWithFrame: self.panelRedondo.bounds];
+    [self.panelRedondo insertSubview:_panelRedondo atIndex:0];
+    [_panelRedondo release];
     
     self.cellNib = [UINib nibWithNibName:@"CeldaModelo3D" bundle:nil];
     self.director = [CCDirector sharedDirector];
@@ -127,7 +135,6 @@
     [starMenuItem4 release];
 
     QuadCurveMenu *menu = [[QuadCurveMenu alloc] initWithFrame:self.view.bounds menus:menus];
-    //menu.startPoint = CGPointMake(20.0, 284.0);
     menu.rotateAngle = 0.0;//M_PI/3;
 	menu.menuWholeAngle =2.0;//M_PI *2;  //M_PI;
 	menu.timeOffset = 0.2f;
@@ -147,7 +154,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return YES;
+    return interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }
 
 
@@ -176,6 +183,7 @@
     if (celda == nil) {
         [self.cellNib  instantiateWithOwner:self options:nil];
         celda = [self celdaModelo3D];
+        [celda setSelectionStyle:UITableViewCellSelectionStyleNone];
         self.celdaModelo3D = nil;
     }
     

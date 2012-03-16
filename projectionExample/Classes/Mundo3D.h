@@ -23,20 +23,25 @@
 {
     Modelo3D *_modelo3DActivo;
     CC3PODMeshNode  *nodoSeleccionado;
+    BOOL refrescarCamara;
+    CC3Node* nodoAEliminar;
 }
 
 -(void)agregarModelo3D:(NSString*)nombreModelo3D recordandoEnNavegacion:(BOOL)seAlmacena;
 
+
+-(void) renderizarNodo;
 -(void)cargarModeloSeleccionado;
 -(void)zoomThatThing:(CGFloat)theZoom;
 
 -(void)spinThatThing:(CGFloat)x :(CGFloat)y;
 
-//-(void)touchWorldAt:(CGPoint) touchPoint;  
+-(void)touchWorldAt:(CGPoint) touchPoint;  
 
 
 @property(nonatomic, assign)id<iDelegadoRepresentacionNavegacion> delegadoReresentacionNavegacion;
 @property(nonatomic, retain)NSString* nombreNodoSeleccionado;
+@property(nonatomic, retain)NSString* nombreModeloActivo;
 
 
 @property(nonatomic, retain)NSDictionary* modelos3D;//modelo3D

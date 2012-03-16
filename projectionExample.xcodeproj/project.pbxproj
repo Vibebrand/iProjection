@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83A24BC41511A740009C1009 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BC31511A740009C1009 /* gear.png */; };
+		83A24BD51511A9D7009C1009 /* _fondo_rombos.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BCC1511A9D7009C1009 /* _fondo_rombos.png */; };
+		83A24BD61511A9D7009C1009 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BCD1511A9D7009C1009 /* 1.png */; };
+		83A24BD71511A9D7009C1009 /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BCE1511A9D7009C1009 /* 1@2x.png */; };
+		83A24BD81511A9D7009C1009 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BCF1511A9D7009C1009 /* 2.png */; };
+		83A24BD91511A9D7009C1009 /* 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BD01511A9D7009C1009 /* 2@2x.png */; };
+		83A24BDA1511A9D7009C1009 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BD11511A9D7009C1009 /* 3.png */; };
+		83A24BDB1511A9D7009C1009 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BD21511A9D7009C1009 /* 3@2x.png */; };
+		83A24BDC1511A9D7009C1009 /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BD31511A9D7009C1009 /* fondo.png */; };
+		83A24BDD1511A9D7009C1009 /* fondo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A24BD41511A9D7009C1009 /* fondo@2x.png */; };
+		83A24BEA1511B1AD009C1009 /* PanelRedondo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 83A24BE91511B1AD009C1009 /* PanelRedondo.mm */; };
 		83CDE8ED150C150C00BBDDB7 /* CHOC_Towe01.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8EA150C150C00BBDDB7 /* CHOC_Towe01.pod */; };
 		83CDE8F2150C16E100BBDDB7 /* Towe01_FloorPlanView.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8F1150C16E100BBDDB7 /* Towe01_FloorPlanView.pod */; };
 		83CDE8F4150C196B00BBDDB7 /* Towe01_FloorView.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8F3150C196A00BBDDB7 /* Towe01_FloorView.pod */; };
 		83CEB16515105D4F00E53EA8 /* ServicioGestorModelos3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CEB16415105D4F00E53EA8 /* ServicioGestorModelos3D.m */; };
 		D738416C15094C12001D95C2 /* ControladorVentanaPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = D738416A15094C12001D95C2 /* ControladorVentanaPrincipal.m */; };
 		D738416D15094C12001D95C2 /* ControladorVentanaPrincipal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D738416B15094C12001D95C2 /* ControladorVentanaPrincipal.xib */; };
+		D78EFBD0151142E000072965 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78EFBCF151142E000072965 /* View.xib */; };
 		D79F3154150E5092004F41C3 /* QuadCurveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3151150E5092004F41C3 /* QuadCurveMenu.m */; };
 		D79F3155150E5092004F41C3 /* QuadCurveMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3153150E5092004F41C3 /* QuadCurveMenuItem.m */; };
 		D79F3165150E50B2004F41C3 /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3157150E50B2004F41C3 /* bg-addbutton-highlighted.png */; };
@@ -30,6 +42,8 @@
 		D79F3171150E50B2004F41C3 /* icon-star.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3163150E50B2004F41C3 /* icon-star.png */; };
 		D79F3172150E50B2004F41C3 /* icon-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3164150E50B2004F41C3 /* icon-star@2x.png */; };
 		D79F3176150EA35D004F41C3 /* Modelo3D.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3175150EA35D004F41C3 /* Modelo3D.m */; };
+		D7B3B88A15128ACB00DA47CE /* CHOC_Towe01_FloorView_nuevo.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7B3B88815128ACB00DA47CE /* CHOC_Towe01_FloorView_nuevo.pod */; };
+		D7B3B88B15128ACB00DA47CE /* CHOC_Towe01_nuevo.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7B3B88915128ACB00DA47CE /* CHOC_Towe01_nuevo.pod */; };
 		D7CB428B14E1C258002568A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CB428A14E1C258002568A3 /* QuartzCore.framework */; };
 		D7CB428D14E1C258002568A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CB428C14E1C258002568A3 /* OpenGLES.framework */; };
 		D7CB428F14E1C258002568A3 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7CB428E14E1C258002568A3 /* OpenAL.framework */; };
@@ -228,6 +242,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83A24BC31511A740009C1009 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		83A24BCC1511A9D7009C1009 /* _fondo_rombos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = _fondo_rombos.png; path = Resources/iconos/_fondo_rombos.png; sourceTree = SOURCE_ROOT; };
+		83A24BCD1511A9D7009C1009 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = Resources/iconos/1.png; sourceTree = SOURCE_ROOT; };
+		83A24BCE1511A9D7009C1009 /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1@2x.png"; path = "Resources/iconos/1@2x.png"; sourceTree = SOURCE_ROOT; };
+		83A24BCF1511A9D7009C1009 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = Resources/iconos/2.png; sourceTree = SOURCE_ROOT; };
+		83A24BD01511A9D7009C1009 /* 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "2@2x.png"; path = "Resources/iconos/2@2x.png"; sourceTree = SOURCE_ROOT; };
+		83A24BD11511A9D7009C1009 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = Resources/iconos/3.png; sourceTree = SOURCE_ROOT; };
+		83A24BD21511A9D7009C1009 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3@2x.png"; path = "Resources/iconos/3@2x.png"; sourceTree = SOURCE_ROOT; };
+		83A24BD31511A9D7009C1009 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fondo.png; path = Resources/iconos/fondo.png; sourceTree = SOURCE_ROOT; };
+		83A24BD41511A9D7009C1009 /* fondo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fondo@2x.png"; path = "Resources/iconos/fondo@2x.png"; sourceTree = SOURCE_ROOT; };
+		83A24BE81511B1AD009C1009 /* PanelRedondo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelRedondo.h; path = Classes/PanelRedondo.h; sourceTree = "<group>"; };
+		83A24BE91511B1AD009C1009 /* PanelRedondo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = PanelRedondo.mm; path = Classes/PanelRedondo.mm; sourceTree = "<group>"; };
 		83CDE8EA150C150C00BBDDB7 /* CHOC_Towe01.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01.pod; path = Resources/CHOC_Towe01.pod; sourceTree = SOURCE_ROOT; };
 		83CDE8F1150C16E100BBDDB7 /* Towe01_FloorPlanView.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = Towe01_FloorPlanView.pod; path = Resources/Towe01_FloorPlanView.pod; sourceTree = SOURCE_ROOT; };
 		83CDE8F3150C196A00BBDDB7 /* Towe01_FloorView.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = Towe01_FloorView.pod; path = Resources/Towe01_FloorView.pod; sourceTree = SOURCE_ROOT; };
@@ -237,6 +263,7 @@
 		D738416A15094C12001D95C2 /* ControladorVentanaPrincipal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControladorVentanaPrincipal.m; path = Classes/ControladorVentanaPrincipal.m; sourceTree = "<group>"; };
 		D738416B15094C12001D95C2 /* ControladorVentanaPrincipal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ControladorVentanaPrincipal.xib; path = Classes/ControladorVentanaPrincipal.xib; sourceTree = "<group>"; };
 		D78EFBC91510FF9800072965 /* iServicioGestorModelos3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iServicioGestorModelos3D.h; path = Classes/iServicioGestorModelos3D.h; sourceTree = "<group>"; };
+		D78EFBCF151142E000072965 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		D79F3150150E5092004F41C3 /* QuadCurveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenu.h; path = Classes/QuadCurveMenu.h; sourceTree = "<group>"; };
 		D79F3151150E5092004F41C3 /* QuadCurveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuadCurveMenu.m; path = Classes/QuadCurveMenu.m; sourceTree = "<group>"; };
 		D79F3152150E5092004F41C3 /* QuadCurveMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenuItem.h; path = Classes/QuadCurveMenuItem.h; sourceTree = "<group>"; };
@@ -257,6 +284,8 @@
 		D79F3164150E50B2004F41C3 /* icon-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-star@2x.png"; sourceTree = "<group>"; };
 		D79F3174150EA35D004F41C3 /* Modelo3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Modelo3D.h; path = Classes/Modelo3D.h; sourceTree = "<group>"; };
 		D79F3175150EA35D004F41C3 /* Modelo3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Modelo3D.m; path = Classes/Modelo3D.m; sourceTree = "<group>"; };
+		D7B3B88815128ACB00DA47CE /* CHOC_Towe01_FloorView_nuevo.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_FloorView_nuevo.pod; path = Resources/CHOC_Towe01_FloorView_nuevo.pod; sourceTree = SOURCE_ROOT; };
+		D7B3B88915128ACB00DA47CE /* CHOC_Towe01_nuevo.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = CHOC_Towe01_nuevo.pod; path = Resources/CHOC_Towe01_nuevo.pod; sourceTree = SOURCE_ROOT; };
 		D7CB428614E1C257002568A3 /* projectionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CB428A14E1C258002568A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D7CB428C14E1C258002568A3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -680,6 +709,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83A24BCB1511A9C7009C1009 /* iconos */ = {
+			isa = PBXGroup;
+			children = (
+				83A24BCC1511A9D7009C1009 /* _fondo_rombos.png */,
+				83A24BCD1511A9D7009C1009 /* 1.png */,
+				83A24BCE1511A9D7009C1009 /* 1@2x.png */,
+				83A24BCF1511A9D7009C1009 /* 2.png */,
+				83A24BD01511A9D7009C1009 /* 2@2x.png */,
+				83A24BD11511A9D7009C1009 /* 3.png */,
+				83A24BD21511A9D7009C1009 /* 3@2x.png */,
+				83A24BD31511A9D7009C1009 /* fondo.png */,
+				83A24BD41511A9D7009C1009 /* fondo@2x.png */,
+			);
+			name = iconos;
+			sourceTree = "<group>";
+		};
 		83CEB16715105DA500E53EA8 /* Protocolos */ = {
 			isa = PBXGroup;
 			children = (
@@ -693,6 +738,7 @@
 			children = (
 				D7FE52E2150FD32A000F4A8C /* Artefactos */,
 				D738416B15094C12001D95C2 /* ControladorVentanaPrincipal.xib */,
+				D78EFBCF151142E000072965 /* View.xib */,
 			);
 			name = Vista;
 			sourceTree = "<group>";
@@ -732,6 +778,8 @@
 		D79F314E150E5048004F41C3 /* Artefactos */ = {
 			isa = PBXGroup;
 			children = (
+				83A24BE81511B1AD009C1009 /* PanelRedondo.h */,
+				83A24BE91511B1AD009C1009 /* PanelRedondo.mm */,
 				D79F3150150E5092004F41C3 /* QuadCurveMenu.h */,
 				D79F3151150E5092004F41C3 /* QuadCurveMenu.m */,
 				D79F3152150E5092004F41C3 /* QuadCurveMenuItem.h */,
@@ -745,6 +793,7 @@
 		D79F3156150E50B2004F41C3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				83A24BC31511A740009C1009 /* gear.png */,
 				D79F3157150E50B2004F41C3 /* bg-addbutton-highlighted.png */,
 				D79F3158150E50B2004F41C3 /* bg-addbutton-highlighted@2x.png */,
 				D79F3159150E50B2004F41C3 /* bg-addbutton.png */,
@@ -1403,7 +1452,10 @@
 		D7CB44EF14E1C649002568A3 /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				83A24BCB1511A9C7009C1009 /* iconos */,
 				D79F3156150E50B2004F41C3 /* Images */,
+				D7B3B88815128ACB00DA47CE /* CHOC_Towe01_FloorView_nuevo.pod */,
+				D7B3B88915128ACB00DA47CE /* CHOC_Towe01_nuevo.pod */,
 				83CDE8F3150C196A00BBDDB7 /* Towe01_FloorView.pod */,
 				83CDE8F1150C16E100BBDDB7 /* Towe01_FloorPlanView.pod */,
 				83CDE8EA150C150C00BBDDB7 /* CHOC_Towe01.pod */,
@@ -1448,7 +1500,7 @@
 		D7CB427D14E1C257002568A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = INEGI;
 			};
 			buildConfigurationList = D7CB428014E1C257002568A3 /* Build configuration list for PBXProject "projectionExample" */;
@@ -1505,6 +1557,19 @@
 				D79F3171150E50B2004F41C3 /* icon-star.png in Resources */,
 				D79F3172150E50B2004F41C3 /* icon-star@2x.png in Resources */,
 				D7FE52E4150FD376000F4A8C /* CeldaModelo3D.xib in Resources */,
+				D78EFBD0151142E000072965 /* View.xib in Resources */,
+				83A24BC41511A740009C1009 /* gear.png in Resources */,
+				83A24BD51511A9D7009C1009 /* _fondo_rombos.png in Resources */,
+				83A24BD61511A9D7009C1009 /* 1.png in Resources */,
+				83A24BD71511A9D7009C1009 /* 1@2x.png in Resources */,
+				83A24BD81511A9D7009C1009 /* 2.png in Resources */,
+				83A24BD91511A9D7009C1009 /* 2@2x.png in Resources */,
+				83A24BDA1511A9D7009C1009 /* 3.png in Resources */,
+				83A24BDB1511A9D7009C1009 /* 3@2x.png in Resources */,
+				83A24BDC1511A9D7009C1009 /* fondo.png in Resources */,
+				83A24BDD1511A9D7009C1009 /* fondo@2x.png in Resources */,
+				D7B3B88A15128ACB00DA47CE /* CHOC_Towe01_FloorView_nuevo.pod in Resources */,
+				D7B3B88B15128ACB00DA47CE /* CHOC_Towe01_nuevo.pod in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1693,6 +1758,7 @@
 				D79F3176150EA35D004F41C3 /* Modelo3D.m in Sources */,
 				D7FE52E7150FD3BF000F4A8C /* CeldaModelo3D.m in Sources */,
 				83CEB16515105D4F00E53EA8 /* ServicioGestorModelos3D.m in Sources */,
+				83A24BEA1511B1AD009C1009 /* PanelRedondo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1727,7 +1793,7 @@
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -1753,7 +1819,7 @@
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
