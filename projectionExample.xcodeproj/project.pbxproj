@@ -253,6 +253,8 @@
 		D7CB44FB14E1C65D002568A3 /* MAPA.pod in Resources */ = {isa = PBXBuildFile; fileRef = D7CB44F514E1C65D002568A3 /* MAPA.pod */; };
 		D7FE52E4150FD376000F4A8C /* CeldaModelo3D.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FE52E3150FD376000F4A8C /* CeldaModelo3D.xib */; };
 		D7FE52E7150FD3BF000F4A8C /* CeldaModelo3D.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FE52E6150FD3BE000F4A8C /* CeldaModelo3D.m */; };
+		F149C7D315AFB6B500300358 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F149C7D115AFB6B500300358 /* libTestFlight.a */; };
+		F149C7D515AFB76B00300358 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F149C7D415AFB76B00300358 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -721,6 +723,9 @@
 		D7FE52E3150FD376000F4A8C /* CeldaModelo3D.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CeldaModelo3D.xib; sourceTree = "<group>"; };
 		D7FE52E5150FD3BE000F4A8C /* CeldaModelo3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CeldaModelo3D.h; path = Classes/CeldaModelo3D.h; sourceTree = "<group>"; };
 		D7FE52E6150FD3BE000F4A8C /* CeldaModelo3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CeldaModelo3D.m; path = Classes/CeldaModelo3D.m; sourceTree = "<group>"; };
+		F149C7D115AFB6B500300358 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTestFlight.a; path = projectionExample/libs/TestFlight/libTestFlight.a; sourceTree = "<group>"; };
+		F149C7D215AFB6B500300358 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestFlight.h; path = projectionExample/libs/TestFlight/TestFlight.h; sourceTree = "<group>"; };
+		F149C7D415AFB76B00300358 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -728,6 +733,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F149C7D515AFB76B00300358 /* libz.dylib in Frameworks */,
 				D7CB428B14E1C258002568A3 /* QuartzCore.framework in Frameworks */,
 				D7CB428D14E1C258002568A3 /* OpenGLES.framework in Frameworks */,
 				D7CB428F14E1C258002568A3 /* OpenAL.framework in Frameworks */,
@@ -736,6 +742,7 @@
 				D7CB429514E1C258002568A3 /* UIKit.framework in Frameworks */,
 				D7CB429714E1C258002568A3 /* Foundation.framework in Frameworks */,
 				D7CB429914E1C258002568A3 /* CoreGraphics.framework in Frameworks */,
+				F149C7D315AFB6B500300358 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,6 +917,8 @@
 		D7CB428914E1C258002568A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F149C7D415AFB76B00300358 /* libz.dylib */,
+				F149C7CF15AFB69F00300358 /* TestFlight */,
 				D7CB428A14E1C258002568A3 /* QuartzCore.framework */,
 				D7CB428C14E1C258002568A3 /* OpenGLES.framework */,
 				D7CB428E14E1C258002568A3 /* OpenAL.framework */,
@@ -1534,6 +1543,15 @@
 			name = Artefactos;
 			sourceTree = "<group>";
 		};
+		F149C7CF15AFB69F00300358 /* TestFlight */ = {
+			isa = PBXGroup;
+			children = (
+				F149C7D115AFB6B500300358 /* libTestFlight.a */,
+				F149C7D215AFB6B500300358 /* TestFlight.h */,
+			);
+			name = TestFlight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1902,6 +1920,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1909,8 +1928,13 @@
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = projectionExample/Resources/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/projectionExample/libs/TestFlight\"",
+				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1919,14 +1943,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = projectionExample/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = projectionExample/Resources/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/projectionExample/libs/TestFlight\"",
+				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

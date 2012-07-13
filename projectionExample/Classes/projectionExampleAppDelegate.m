@@ -27,6 +27,13 @@
 }
 
 - (void) applicationDidFinishLaunching:(UIApplication*)application {
+    
+    [TestFlight takeOff:@"fc94afbf9058e48097c399875eb34c13_MTA5NjA4MjAxMi0wNy0xMiAxNDozNDowOC40ODc0MjA"];
+    
+#ifdef TESTING
+    // TODO Obtener identificador correspondiente
+    [TestFlight setDeviceIdentifier:[[UIDevice currentDevice] uniqueIdentifier]];
+#endif
 	
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	
@@ -52,7 +59,9 @@
 	
     /*viewController = [[CCNodeController controller] retain];
 	viewController.doesAutoRotate = YES;
-	[viewController runSceneOnNode: mainLayer];	*/		
+	[viewController runSceneOnNode: mainLayer];	*/
+	
+    [TestFlight passCheckpoint:@"INICIO_APLICACION"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
