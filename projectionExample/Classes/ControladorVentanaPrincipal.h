@@ -12,10 +12,12 @@
 #import "CeldaModelo3D.h"
 #import "iDelegadoRepresentacionNavegacion.h"
 #import "iDelegadoNavegacion.h"
+#import "SBTickerView.h"
 
 @interface ControladorVentanaPrincipal : UIViewController<UITableViewDelegate, UITableViewDataSource, iDelegadoRepresentacionNavegacion>
 {
     EAGLView *_glView;
+
 }
 
 @property(nonatomic, assign) NSArray *representacionModelos3ds;
@@ -27,6 +29,12 @@
 
 @property(nonatomic, retain) IBOutlet CeldaModelo3D * celdaModelo3D;
 @property(nonatomic, retain) UINib * cellNib;
+
+
+@property (nonatomic, strong) IBOutlet SBTickerView *fullTickerView;
+@property (nonatomic, strong) IBOutlet UIView *frontView;
+@property (nonatomic, strong) IBOutlet UIView *backView;
+- (IBAction)tick:(id)sender;
 
 -(void)setupMenu;
 

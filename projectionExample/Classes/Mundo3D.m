@@ -68,6 +68,7 @@
         [self.activeCamera moveWithDuration:1.0 toShowAllOf:[_modelo3DActivo obtenerArchivoPOD] withPadding:0];
     
         refrescarCamara=NO;
+    
     }
     
     [super drawWorld];
@@ -212,8 +213,8 @@
         
          [self setNombreNodoSeleccionado:[nodoSeleccionado name]];
         
-        CCActionInterval* tintUp = [CC3TintEmissionTo actionWithDuration: 0.3f colorTo: kCCC4FCyan];
-        CCActionInterval* tintDown = [CC3TintEmissionTo actionWithDuration: 0.9f colorTo: kCCC4FBlack];
+        CCActionInterval* tintUp = [CC3TintEmissionTo actionWithDuration: 0.2f colorTo: kCCC4FCyan];
+        CCActionInterval* tintDown = [CC3TintEmissionTo actionWithDuration: 0.6f colorTo: kCCC4FBlack];
         CCActionInterval* callFuncion = [CCCallFunc actionWithTarget:self selector:@selector(cargarModeloSeleccionado)];
         [nodoSeleccionado runAction: [CCSequence actions:tintUp,tintDown,callFuncion, nil ]];
     }

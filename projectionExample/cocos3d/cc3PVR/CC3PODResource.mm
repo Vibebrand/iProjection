@@ -68,7 +68,7 @@ static const id placeHolder = [NSObject new];
 	[materials release];
 	[textures release];
 	if (self.pvrtModel) {
-		 delete self.pvrtModelImpl;
+		 //delete self.pvrtModelImpl;
 	}
 	[super dealloc];
 }

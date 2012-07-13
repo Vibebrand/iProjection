@@ -12,6 +12,7 @@
 #import "QuadCurveMenuItem.h"
 #import "PanelRedondo.h"
 
+
 @implementation ControladorVentanaPrincipal
 
 @synthesize representacionModelos3ds;
@@ -24,12 +25,21 @@
 @synthesize celdaModelo3D;
 @synthesize cellNib = _cellNib;
 
+@synthesize fullTickerView;
+@synthesize backView;
+@synthesize frontView;
+
 -(void)dealloc
 {
     self.representacionModelos3ds = nil;
     self.tablaDatos = nil;
     self.celdaModelo3D= nil;
     self.panelRedondo = nil;
+    
+    
+    self.frontView = nil;
+    self.backView = nil;
+    self.fullTickerView = nil;
     
     [_cellNib release];
     [super dealloc];
@@ -54,21 +64,23 @@
 {
     [super viewDidLoad];
     
-     //[[self view ] setBackgroundColor:[UIColor colorWithPatternImage: [UIImage imageNamed:@"_fondo_rombos.png"] ]];
-    
      UIView* _panelRedondo = [[PanelRedondo alloc] initWithFrame: self.panelRedondo.bounds];
     [self.panelRedondo insertSubview:_panelRedondo atIndex:0];
     [_panelRedondo release];
     
+    [self.fullTickerView setFrontView:self.frontView];
+    [self.fullTickerView setBackView:self.backView];
+    [self.fullTickerView setDuration:1.];
+
     self.cellNib = [UINib nibWithNibName:@"CeldaModelo3D" bundle:nil];
     self.director = [CCDirector sharedDirector];
     
     _glView = [CC3EAGLView viewWithFrame: [[self view] bounds] 
                              pixelFormat: kEAGLColorFormatRGBA8
                              depthFormat: GL_DEPTH_COMPONENT16_OES
-                      preserveBackbuffer: NO
+                      preserveBackbuffer: NO    
                               sharegroup: nil
-                           multiSampling: NO
+                           multiSampling: YES 
                          numberOfSamples: 4];
     
 	[_glView setMultipleTouchEnabled: YES];
@@ -79,7 +91,7 @@
     
 	[self.director setOpenGLView:_glView];
     
-    [[self view] insertSubview:_glView atIndex:0];
+    [[self frontView] insertSubview:_glView atIndex:0];
     
     [self setupMenu];
     
@@ -101,6 +113,7 @@
     [scene addChild: mainLayer];
     
     [[self director] runWithScene:scene];
+    
 }
 
 -(void)setupMenu
@@ -109,23 +122,23 @@
     UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
     UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
     
-    UIImage *starImage = [UIImage imageNamed:@"icon-star.png"];
+    
     
     QuadCurveMenuItem *starMenuItem1 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
                                                                highlightedImage:storyMenuItemImagePressed 
-                                                                   ContentImage:starImage 
+                                                                   ContentImage:[UIImage imageNamed:@"aire.png"] 
                                                         highlightedContentImage:nil];
     QuadCurveMenuItem *starMenuItem2 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
                                                                highlightedImage:storyMenuItemImagePressed 
-                                                                   ContentImage:starImage 
+                                                                   ContentImage:[UIImage imageNamed:@"rayo.png"] 
                                                         highlightedContentImage:nil];
     QuadCurveMenuItem *starMenuItem3 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
                                                                highlightedImage:storyMenuItemImagePressed 
-                                                                   ContentImage:starImage 
+                                                                   ContentImage:[UIImage imageNamed:@"gota.png"] 
                                                         highlightedContentImage:nil];
     QuadCurveMenuItem *starMenuItem4 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
                                                                highlightedImage:storyMenuItemImagePressed 
-                                                                   ContentImage:starImage 
+                                                                   ContentImage:[UIImage imageNamed:@"encender.png"] 
                                                         highlightedContentImage:nil];
     
     NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, nil];
@@ -141,7 +154,7 @@
 	menu.farRadius = 180.0f;
 	menu.endRadius = 100.0f;
     menu.nearRadius = 50.0f;
-    [[self view] insertSubview:menu atIndex:1];
+    [[self frontView] insertSubview:menu atIndex:1];
     
     
     [menu release];
@@ -215,5 +228,12 @@
     [self setRepresentacionModelos3ds:representacionModelos3D];
     [[self tablaDatos] reloadData];
 }
+
+- (IBAction)tick:(UIButton *)sender {   
+    
+    [fullTickerView tick:(sender.tag - 2) animated:YES completion:nil];
+}
+
+
 
 @end

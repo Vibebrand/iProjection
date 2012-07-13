@@ -22,9 +22,23 @@
 		83CDE8F2150C16E100BBDDB7 /* Towe01_FloorPlanView.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8F1150C16E100BBDDB7 /* Towe01_FloorPlanView.pod */; };
 		83CDE8F4150C196B00BBDDB7 /* Towe01_FloorView.pod in Resources */ = {isa = PBXBuildFile; fileRef = 83CDE8F3150C196A00BBDDB7 /* Towe01_FloorView.pod */; };
 		83CEB16515105D4F00E53EA8 /* ServicioGestorModelos3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CEB16415105D4F00E53EA8 /* ServicioGestorModelos3D.m */; };
+		D730550A15AF255500AF96EC /* splashScreen02.png in Resources */ = {isa = PBXBuildFile; fileRef = D730550915AF255500AF96EC /* splashScreen02.png */; };
 		D738416C15094C12001D95C2 /* ControladorVentanaPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = D738416A15094C12001D95C2 /* ControladorVentanaPrincipal.m */; };
 		D738416D15094C12001D95C2 /* ControladorVentanaPrincipal.xib in Resources */ = {isa = PBXBuildFile; fileRef = D738416B15094C12001D95C2 /* ControladorVentanaPrincipal.xib */; };
+		D7625A00151B99150071A030 /* SBDoubleSidedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D76259F9151B99150071A030 /* SBDoubleSidedLayer.m */; };
+		D7625A01151B99150071A030 /* SBGradientOverlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D76259FB151B99150071A030 /* SBGradientOverlayLayer.m */; };
+		D7625A02151B99150071A030 /* SBTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D76259FD151B99150071A030 /* SBTickerView.m */; };
+		D7625A03151B99160071A030 /* UIView+SBExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = D76259FF151B99150071A030 /* UIView+SBExtras.m */; };
+		D7625A06151B9FDE0071A030 /* SBTickView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7625A05151B9FDE0071A030 /* SBTickView.m */; };
 		D78EFBD0151142E000072965 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78EFBCF151142E000072965 /* View.xib */; };
+		D79370A91513B55900B062EF /* aire.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A11513B55900B062EF /* aire.png */; };
+		D79370AA1513B55900B062EF /* aire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A21513B55900B062EF /* aire@2x.png */; };
+		D79370AB1513B55900B062EF /* encender.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A31513B55900B062EF /* encender.png */; };
+		D79370AC1513B55900B062EF /* encender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A41513B55900B062EF /* encender@2x.png */; };
+		D79370AD1513B55900B062EF /* gota.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A51513B55900B062EF /* gota.png */; };
+		D79370AE1513B55900B062EF /* gota@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A61513B55900B062EF /* gota@2x.png */; };
+		D79370AF1513B55900B062EF /* rayo.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A71513B55900B062EF /* rayo.png */; };
+		D79370B01513B55900B062EF /* rayo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D79370A81513B55900B062EF /* rayo@2x.png */; };
 		D79F3154150E5092004F41C3 /* QuadCurveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3151150E5092004F41C3 /* QuadCurveMenu.m */; };
 		D79F3155150E5092004F41C3 /* QuadCurveMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D79F3153150E5092004F41C3 /* QuadCurveMenuItem.m */; };
 		D79F3165150E50B2004F41C3 /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D79F3157150E50B2004F41C3 /* bg-addbutton-highlighted.png */; };
@@ -259,11 +273,30 @@
 		83CDE8F3150C196A00BBDDB7 /* Towe01_FloorView.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = Towe01_FloorView.pod; path = Resources/Towe01_FloorView.pod; sourceTree = SOURCE_ROOT; };
 		83CEB16315105D4F00E53EA8 /* ServicioGestorModelos3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServicioGestorModelos3D.h; path = Classes/ServicioGestorModelos3D.h; sourceTree = "<group>"; };
 		83CEB16415105D4F00E53EA8 /* ServicioGestorModelos3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServicioGestorModelos3D.m; path = Classes/ServicioGestorModelos3D.m; sourceTree = "<group>"; };
+		D730550915AF255500AF96EC /* splashScreen02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splashScreen02.png; path = Resources/splashScreen02.png; sourceTree = "<group>"; };
 		D738416915094C12001D95C2 /* ControladorVentanaPrincipal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControladorVentanaPrincipal.h; path = Classes/ControladorVentanaPrincipal.h; sourceTree = "<group>"; };
 		D738416A15094C12001D95C2 /* ControladorVentanaPrincipal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControladorVentanaPrincipal.m; path = Classes/ControladorVentanaPrincipal.m; sourceTree = "<group>"; };
 		D738416B15094C12001D95C2 /* ControladorVentanaPrincipal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ControladorVentanaPrincipal.xib; path = Classes/ControladorVentanaPrincipal.xib; sourceTree = "<group>"; };
+		D76259F8151B99150071A030 /* SBDoubleSidedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBDoubleSidedLayer.h; path = Classes/SBDoubleSidedLayer.h; sourceTree = "<group>"; };
+		D76259F9151B99150071A030 /* SBDoubleSidedLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBDoubleSidedLayer.m; path = Classes/SBDoubleSidedLayer.m; sourceTree = "<group>"; };
+		D76259FA151B99150071A030 /* SBGradientOverlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBGradientOverlayLayer.h; path = Classes/SBGradientOverlayLayer.h; sourceTree = "<group>"; };
+		D76259FB151B99150071A030 /* SBGradientOverlayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBGradientOverlayLayer.m; path = Classes/SBGradientOverlayLayer.m; sourceTree = "<group>"; };
+		D76259FC151B99150071A030 /* SBTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTickerView.h; path = Classes/SBTickerView.h; sourceTree = "<group>"; };
+		D76259FD151B99150071A030 /* SBTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBTickerView.m; path = Classes/SBTickerView.m; sourceTree = "<group>"; };
+		D76259FE151B99150071A030 /* UIView+SBExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+SBExtras.h"; path = "Classes/UIView+SBExtras.h"; sourceTree = "<group>"; };
+		D76259FF151B99150071A030 /* UIView+SBExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+SBExtras.m"; path = "Classes/UIView+SBExtras.m"; sourceTree = "<group>"; };
+		D7625A04151B9FDE0071A030 /* SBTickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBTickView.h; path = Classes/SBTickView.h; sourceTree = "<group>"; };
+		D7625A05151B9FDE0071A030 /* SBTickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBTickView.m; path = Classes/SBTickView.m; sourceTree = "<group>"; };
 		D78EFBC91510FF9800072965 /* iServicioGestorModelos3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iServicioGestorModelos3D.h; path = Classes/iServicioGestorModelos3D.h; sourceTree = "<group>"; };
 		D78EFBCF151142E000072965 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		D79370A11513B55900B062EF /* aire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aire.png; path = Resources/iconos/aire.png; sourceTree = SOURCE_ROOT; };
+		D79370A21513B55900B062EF /* aire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aire@2x.png"; path = "Resources/iconos/aire@2x.png"; sourceTree = SOURCE_ROOT; };
+		D79370A31513B55900B062EF /* encender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = encender.png; path = Resources/iconos/encender.png; sourceTree = SOURCE_ROOT; };
+		D79370A41513B55900B062EF /* encender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "encender@2x.png"; path = "Resources/iconos/encender@2x.png"; sourceTree = SOURCE_ROOT; };
+		D79370A51513B55900B062EF /* gota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gota.png; path = Resources/iconos/gota.png; sourceTree = SOURCE_ROOT; };
+		D79370A61513B55900B062EF /* gota@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gota@2x.png"; path = "Resources/iconos/gota@2x.png"; sourceTree = SOURCE_ROOT; };
+		D79370A71513B55900B062EF /* rayo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rayo.png; path = Resources/iconos/rayo.png; sourceTree = SOURCE_ROOT; };
+		D79370A81513B55900B062EF /* rayo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rayo@2x.png"; path = "Resources/iconos/rayo@2x.png"; sourceTree = SOURCE_ROOT; };
 		D79F3150150E5092004F41C3 /* QuadCurveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenu.h; path = Classes/QuadCurveMenu.h; sourceTree = "<group>"; };
 		D79F3151150E5092004F41C3 /* QuadCurveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuadCurveMenu.m; path = Classes/QuadCurveMenu.m; sourceTree = "<group>"; };
 		D79F3152150E5092004F41C3 /* QuadCurveMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenuItem.h; path = Classes/QuadCurveMenuItem.h; sourceTree = "<group>"; };
@@ -712,6 +745,14 @@
 		83A24BCB1511A9C7009C1009 /* iconos */ = {
 			isa = PBXGroup;
 			children = (
+				D79370A11513B55900B062EF /* aire.png */,
+				D79370A21513B55900B062EF /* aire@2x.png */,
+				D79370A31513B55900B062EF /* encender.png */,
+				D79370A41513B55900B062EF /* encender@2x.png */,
+				D79370A51513B55900B062EF /* gota.png */,
+				D79370A61513B55900B062EF /* gota@2x.png */,
+				D79370A71513B55900B062EF /* rayo.png */,
+				D79370A81513B55900B062EF /* rayo@2x.png */,
 				83A24BCC1511A9D7009C1009 /* _fondo_rombos.png */,
 				83A24BCD1511A9D7009C1009 /* 1.png */,
 				83A24BCE1511A9D7009C1009 /* 1@2x.png */,
@@ -775,9 +816,27 @@
 			name = Servicio;
 			sourceTree = "<group>";
 		};
+		D76259F6151B98D80071A030 /* FlipView */ = {
+			isa = PBXGroup;
+			children = (
+				D7625A04151B9FDE0071A030 /* SBTickView.h */,
+				D7625A05151B9FDE0071A030 /* SBTickView.m */,
+				D76259F8151B99150071A030 /* SBDoubleSidedLayer.h */,
+				D76259F9151B99150071A030 /* SBDoubleSidedLayer.m */,
+				D76259FA151B99150071A030 /* SBGradientOverlayLayer.h */,
+				D76259FB151B99150071A030 /* SBGradientOverlayLayer.m */,
+				D76259FC151B99150071A030 /* SBTickerView.h */,
+				D76259FD151B99150071A030 /* SBTickerView.m */,
+				D76259FE151B99150071A030 /* UIView+SBExtras.h */,
+				D76259FF151B99150071A030 /* UIView+SBExtras.m */,
+			);
+			name = FlipView;
+			sourceTree = "<group>";
+		};
 		D79F314E150E5048004F41C3 /* Artefactos */ = {
 			isa = PBXGroup;
 			children = (
+				D76259F6151B98D80071A030 /* FlipView */,
 				83A24BE81511B1AD009C1009 /* PanelRedondo.h */,
 				83A24BE91511B1AD009C1009 /* PanelRedondo.mm */,
 				D79F3150150E5092004F41C3 /* QuadCurveMenu.h */,
@@ -1108,6 +1167,7 @@
 		D7CB438C14E1C25B002568A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D730550915AF255500AF96EC /* splashScreen02.png */,
 				D7CB438D14E1C25B002568A3 /* Default.png */,
 				D7CB438F14E1C25B002568A3 /* fps_images.png */,
 				D7CB439114E1C25B002568A3 /* Icon-72.png */,
@@ -1570,6 +1630,15 @@
 				83A24BDD1511A9D7009C1009 /* fondo@2x.png in Resources */,
 				D7B3B88A15128ACB00DA47CE /* CHOC_Towe01_FloorView_nuevo.pod in Resources */,
 				D7B3B88B15128ACB00DA47CE /* CHOC_Towe01_nuevo.pod in Resources */,
+				D79370A91513B55900B062EF /* aire.png in Resources */,
+				D79370AA1513B55900B062EF /* aire@2x.png in Resources */,
+				D79370AB1513B55900B062EF /* encender.png in Resources */,
+				D79370AC1513B55900B062EF /* encender@2x.png in Resources */,
+				D79370AD1513B55900B062EF /* gota.png in Resources */,
+				D79370AE1513B55900B062EF /* gota@2x.png in Resources */,
+				D79370AF1513B55900B062EF /* rayo.png in Resources */,
+				D79370B01513B55900B062EF /* rayo@2x.png in Resources */,
+				D730550A15AF255500AF96EC /* splashScreen02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1759,6 +1828,11 @@
 				D7FE52E7150FD3BF000F4A8C /* CeldaModelo3D.m in Sources */,
 				83CEB16515105D4F00E53EA8 /* ServicioGestorModelos3D.m in Sources */,
 				83A24BEA1511B1AD009C1009 /* PanelRedondo.mm in Sources */,
+				D7625A00151B99150071A030 /* SBDoubleSidedLayer.m in Sources */,
+				D7625A01151B99150071A030 /* SBGradientOverlayLayer.m in Sources */,
+				D7625A02151B99150071A030 /* SBTickerView.m in Sources */,
+				D7625A03151B99160071A030 /* UIView+SBExtras.m in Sources */,
+				D7625A06151B9FDE0071A030 /* SBTickView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
