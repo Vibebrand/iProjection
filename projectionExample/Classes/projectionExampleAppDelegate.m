@@ -52,7 +52,7 @@
 	
      controladorVentanaPrincipal = [[ControladorVentanaPrincipal alloc] initWithNibName:@"ControladorVentanaPrincipal" bundle:[NSBundle mainBundle]];
 	
-	[window addSubview: [controladorVentanaPrincipal view] ];
+    [window setRootViewController: controladorVentanaPrincipal];
 	[window makeKeyAndVisible];
 
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
